@@ -13,7 +13,7 @@
         "source": "https://github.com/thephpleague/iso3166"
     },
     "require": {
-        "php": ">5.3",
+        "php": ">5.3"
     },
     "autoload": {
         "psr-4": {
