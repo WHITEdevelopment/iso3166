@@ -125,7 +125,7 @@ class ISO3166 implements DataProvider
      *
      * @return array
      */
-    private function getBy($key, $value)
+    public function getBy($key, $value)
     {
         foreach ($this as $country) {
             if (0 === strcasecmp($value, $country[$key])) {
