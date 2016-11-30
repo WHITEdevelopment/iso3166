@@ -127,7 +127,7 @@ class ISO3166 implements DataProvider
      */
     public function getBy($key, $value)
     {
-        foreach ($this as $country) {
+        foreach ($this->countries as $country) {
             if (0 === strcasecmp($value, $country[$key])) {
                 return $country;
             }
@@ -151,7 +151,7 @@ class ISO3166 implements DataProvider
      */
     protected function get($id)
     {
-        foreach ($this as $country) {
+        foreach ($this->countries as $country) {
             if (0 === strcasecmp($id, $country[self::KEY_ALPHA2]) ||
                 0 === strcasecmp($id, $country[self::KEY_ALPHA3]) ||
                 0 === strcasecmp($id, $country[self::KEY_NUMERIC])
